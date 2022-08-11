@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đổi tiền</title>
+    <style>
+        div {
+            display: inline-block
+        }
+    </style>
+</head>
+<body>
+<form>
+    <div>
+        <label>Amount</label><br/>
+        <input id="amount" placeholder="Enter amount">
+    </div>&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <div>
+        <label>From Currency</label><br/>
+        <select id="fromCurrency"><br/>
+            <option>VND</option>
+            <option>USD</option>
+        </select>
+    </div>&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <div>
+        <label>From Currency</label><br/>
+        <select id="toCurrency">
+            <option>VND</option>
+            <option>USD</option>
+        </select>
+    </div>&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <button type="button" onclick="convertCurrency();">Convert</button>
+</form>
+<p id="result"></p>
+<script src="doi-tien.js"></script>
+
+</body>
+</html>
